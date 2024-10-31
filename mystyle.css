@@ -1,213 +1,27 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #ECEFF1;
-    background-color: #1B1B1B; 
+    background-color: #1B1B1B;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    text-align: center;
 }
 
 #main-header {
-    background-color: #263238; 
-    color: #FF7043; 
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.header-title {
-    margin: 0;
-    font-size: 2.8rem;
-    letter-spacing: 2px;
-}
-
-
-.site-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.site-nav ul li {
-    display: inline;
-}
-
-.site-nav ul li a {
-    color: #E64A19; 
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: color 0.3s ease-in-out;
-}
-
-.site-nav ul li a:hover {
-    color: #FF8A65; 
-}
-
-
-.content-section {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #212121; 
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.section-title {
-    color: #FF7043; 
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
-.introduction-text, .interest-text, .cta-text, .info-text {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-
-.intro-image {
-    max-width: 80%; 
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px; 
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-
-.intro-video {
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
-}
-
-
-.cta-link a, .info-link a {
-    color: #FF7043;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.cta-link a:hover, .info-link a:hover {
-    color: #FF8A65;
-    text-decoration: underline;
-}
-
-
-#main-footer {
     background-color: #263238;
-    color: #B0BEC5;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9rem;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
     color: #FF7043;
-    font-size: 2rem;
-    text-align: center;
-}
-
-h2 {
-    color: #FF7043;
-    font-size: 1.75rem;
-    margin-bottom: 20px;
-}
-/* การจัดเรียงให้กับ header บนมือถือ */
-@media (max-width: 767px) {
-    #main-header {
-        padding: 10px 0;
-    }
-
-    .header-title {
-        font-size: 2rem;
-    }
-
-    .site-nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .site-nav ul li a {
-        font-size: 1rem;
-    }
-}
-
-/* ปรับขนาดวิดีโอและรูปภาพให้เล็กลงบนหน้าจอขนาดเล็ก */
-@media (max-width: 767px) {
-    .intro-image {
-        max-width: 100%;
-    }
-
-    .intro-video {
-        max-width: 100%;
-    }
-}
-
-/* การจัดเรียง container สำหรับ desktop */
-@media (min-width: 1025px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-/* การจัดเรียง container สำหรับ tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.intro-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
-
-.intro-nav a {
-    color: #FF7043;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-.intro-nav a:hover {
-    color: #FF8A65;
-}
-/* จัดศูนย์กลางให้กับทั้งสองส่วน */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #ECEFF1;
-    background-color: #1B1B1B; 
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#main-header {
-    background-color: #263238; 
-    color: #FF7043; 
     padding: 20px 0;
 }
 
 .header-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
+
 .primary-links, .secondary-links {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .primary-links ul, .secondary-links ul {
@@ -220,55 +34,59 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .secondary-links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .primary-links a, .secondary-links a {
-    color: #FF7043;
+    display: block;
+    padding: 15px 20px;
+    background-color: #FF7043;
+    color: #1B1B1B;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 200px;
 }
 
 .primary-links a:hover, .secondary-links a:hover {
-    color: #FF8A65;
+    background-color: #333;
+    color: #FF7043;
 }
-/* สไตล์สำหรับปุ่มลิงก์ทั้งหมด */
+
 .site-nav ul, .content-section nav ul {
     padding: 0;
     list-style-type: none;
-    text-align: center;
 }
 
 .site-nav ul li, .content-section nav ul li {
-    display: block;
-    margin: 10px auto; /* กำหนดระยะห่างระหว่างปุ่ม */
+    margin: 10px auto;
 }
 
 .site-nav ul li a, .content-section nav ul li a {
     display: block;
     padding: 15px 20px;
-    background-color: #333;
-    color: #FF7043;
-    border-radius: 8px;
-    max-width: 200px;
-    text-align: center;
+    background-color: #FF7043;
+    color: #1B1B1B;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 8px;
+    max-width: 200px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 0 auto; /* จัดกึ่งกลาง */
 }
 
-/* กำหนดสไตล์เมื่อ hover */
 .site-nav ul li a:hover, .content-section nav ul li a:hover {
-    background-color: #FF7043;
-    color: #FFF;
+    background-color: #333;
+    color: #FF7043;
 }
+
+
+
