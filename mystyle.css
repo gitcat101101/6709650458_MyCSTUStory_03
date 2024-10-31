@@ -181,6 +181,23 @@ body {
         z-index: 10; 
     }
 }
+.intro-image {
+    max-width: 500px; 
+    width: 100%; 
+    height: auto; 
+}
+video {
+    width: 100%; 
+    height: auto; 
+}
+iframe {
+    max-width: 100%; 
+    height: auto; 
+}
+video {
+    width: 500px;
+    height: 300px;
+}
 
 
 
