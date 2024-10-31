@@ -119,28 +119,156 @@ h2 {
     font-size: 1.75rem;
     margin-bottom: 20px;
 }
-/* ขนาดหน้าจอใหญ่ เช่น Desktop */
+/* การจัดเรียงให้กับ header บนมือถือ */
+@media (max-width: 767px) {
+    #main-header {
+        padding: 10px 0;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .site-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* ปรับขนาดวิดีโอและรูปภาพให้เล็กลงบนหน้าจอขนาดเล็ก */
+@media (max-width: 767px) {
+    .intro-image {
+        max-width: 100%;
+    }
+
+    .intro-video {
+        max-width: 100%;
+    }
+}
+
+/* การจัดเรียง container สำหรับ desktop */
 @media (min-width: 1025px) {
-    /* CSS สำหรับ desktop */
     .container {
-      display: flex;
-      flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-  }
-  
-  /* ขนาดหน้าจอขนาดกลาง เช่น Tablet */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    /* CSS สำหรับ tablet */
+}
+
+/* การจัดเรียง container สำหรับ tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
     .container {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
-  /* ขนาดหน้าจอเล็ก เช่น Mobile */
-  @media (max-width: 767px) {
-    /* CSS สำหรับมือถือ */
-    .container {
-      display: block;
-    }
-  }
+}
+.intro-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.intro-nav a {
+    color: #FF7043;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.intro-nav a:hover {
+    color: #FF8A65;
+}
+/* จัดศูนย์กลางให้กับทั้งสองส่วน */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ECEFF1;
+    background-color: #1B1B1B; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main-header {
+    background-color: #263238; 
+    color: #FF7043; 
+    padding: 20px 0;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.primary-links, .secondary-links {
+    margin-bottom: 20px;
+}
+
+.primary-links ul, .secondary-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.secondary-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.primary-links a, .secondary-links a {
+    color: #FF7043;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.primary-links a:hover, .secondary-links a:hover {
+    color: #FF8A65;
+}
+/* สไตล์สำหรับปุ่มลิงก์ทั้งหมด */
+.site-nav ul, .content-section nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.site-nav ul li, .content-section nav ul li {
+    display: block;
+    margin: 10px auto; /* กำหนดระยะห่างระหว่างปุ่ม */
+}
+
+.site-nav ul li a, .content-section nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #FF7043;
+    border-radius: 8px;
+    max-width: 200px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 auto; /* จัดกึ่งกลาง */
+}
+
+/* กำหนดสไตล์เมื่อ hover */
+.site-nav ul li a:hover, .content-section nav ul li a:hover {
+    background-color: #FF7043;
+    color: #FFF;
+}
