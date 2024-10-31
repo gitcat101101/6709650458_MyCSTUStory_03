@@ -182,7 +182,7 @@ body {
     }
 }
 .intro-image {
-    max-width: 500px; 
+    max-width: 400px; 
     width: 100%; 
     height: auto; 
 }
@@ -195,7 +195,7 @@ iframe {
     height: auto; 
 }
 video {
-    width: 500px;
+    width: 400px;
     height: 300px;
 }
 
